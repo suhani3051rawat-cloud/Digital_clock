@@ -1,0 +1,271 @@
+body{
+    background-image:url("flower.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:80%; 
+    margin: 0;
+    padding: 0;
+}
+#name{
+    font-size: xx-large;
+}
+#icons{
+    display:flex;
+    justify-content:space-evenly;
+    width:300px;
+    position:absolute;
+    right:0;
+    top: 10px;
+}
+#func{
+    font-size: x-large;
+    display:flex;
+    justify-content:center;
+    color:white;
+}
+#music:hover{
+    height:40px;
+    width:50px;
+}
+#setting:hover{
+    height:40px;
+    width:50px;
+}
+#bar:hover{
+    height:40px;
+    width:50px;
+}
+#clock{
+    height:280px;
+    width:55%;
+    background-color:transparent;
+    border-width:0;
+    border-style:solid;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:80px;
+    border-radius:20px;
+    color:black;
+    font-size:400%;
+    text-align: center;
+    position:relative;
+    bottom:200px;
+    box-shadow: 
+    8px 8px 12px rgba(0, 255, 255, 0.8), 
+    -6px -6px 12px rgba(255, 192, 203, 0.8),
+     0 0 16px rgba(0,0, 255); 
+}
+
+#time{
+   position:relative;
+   top: 60px; 
+} 
+#img{
+    position:relative;
+    top:180px;
+    left:10px;
+    filter: blur(0.8px);
+    animation:jump 2s infinite;
+}
+#cloud::before::after{
+    content: " ";
+    position: absolute;
+}
+ #cloud::before{
+    width:100px;
+    height:100px;
+    top:-50px;
+    left: 20px;
+ }
+#cloud::after{
+    width:80px;
+    height:80px;
+    top:-40px;
+    left: 20px;
+ }
+#hours::after{
+    content: "Hours";
+    font-size: xx-large;
+}
+@keyframes jump {
+    0%{
+     transform:translatey(0);
+    }
+    50%{
+        transform:translatey(-50px);
+    }
+    100%{
+        transform:translatey(0);
+    }
+}
+#min::after{
+    content: "Minutes";
+    font-size: xx-large;
+}
+#seconds::after{
+    content: "sec";
+    font-size: xx-large;
+}
+#month{
+    font-size:xx-large ;
+}
+#day{
+    font-size:xx-large ;
+}
+#date{
+    font-size:xx-large ;
+}
+#ampm{
+    position:relative;
+    font-size: xx-large;
+}
+#year{
+    font-size: xx-large;
+}
+.quote-container {
+    text-align: center;
+    padding: 2rem;
+    background-color:transparent;
+    opacity:1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+#quote {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+#author {
+    font-size: 1rem;
+    color: #555;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:transparent;
+    padding: 20px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color:transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top:5%;
+}
+
+.header {
+    background-color:transparent;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.embed-button {
+    background-color:transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+.form-container h3 {
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.required-star {
+    color: red;
+    margin-left: 2px;
+}
+
+.form-group input[type="text"], .form-group select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[placeholder] {
+    margin-top: 10px;
+}
+
+.color-box {
+    position: absolute;
+    right: 5px;
+    top: 30px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0 H50 V50 H0 Z" fill="%23fff"/><path d="M50 0 H100 V50 H50 Z" fill="%23ccc"/><path d="M0 50 H50 V100 H0 Z" fill="%23ccc"/><path d="M50 50 H100 V100 H50 Z" fill="%23fff"/></svg>');
+    background-size: 100% 100%;
+    border-radius: 5px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+ @media (max-width: 768px) {
+    .container {
+        margin: 0 10px;
+    } 
+}
+
+#submit{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#map{
+    display: flex;
+    font-size: x-large;
+    gap:15rem;
+    margin-top:10px;
+}
+#social_media{
+    height:130px;
+    width:800px;
+    border:2px solid white;
+    background-color:transparent;
+    border-radius:10px;
+    margin-top:30px;
+    text-align: center;
+    line-height:40px;
+
+}
