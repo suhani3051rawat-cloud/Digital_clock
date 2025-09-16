@@ -82,20 +82,28 @@ let usercolor = document.getElementById("text-color");
 console.log(usercolor);
  let bgcolor = document.getElementById("background-color");
  console.log(bgcolor);
- let digitscolor = document.getElementById("digits-color");
- console.log(digitscolor);
+ let font = document.getElementById("bgofdoc");
+ console.log(font);
 
  function updatecolor(){
     clock.style.color = usercolor.value; 
  }
  usercolor.addEventListener("input" , updatecolor);
- updatecolor()
 
  function updatebgcolor(){
     clock.style.backgroundColor = bgcolor.value;
  }
 bgcolor.addEventListener("input" , updatebgcolor);
+
+function fontupdate(){
+    document.body.style.background = font.value;
+ }
+font.addEventListener("input" , fontupdate);
+updatecolor()
 updatebgcolor();
+fontupdate();
+
+
 
 
 
