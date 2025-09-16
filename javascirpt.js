@@ -1,5 +1,6 @@
 let clock = document.getElementById("clock");
 console.log(clock);
+let now = new Date();
 
 function updateTime(){
 let hours = document.getElementById("hours");
@@ -77,3 +78,24 @@ function updateQuote() {
 }
 updateQuote();
 setInterval(updateQuote, 10000);
+let usercolor = document.getElementById("text-color");
+console.log(usercolor);
+ let bgcolor = document.getElementById("background-color");
+ console.log(bgcolor);
+ let digitscolor = document.getElementById("digits-color");
+ console.log(digitscolor);
+
+ function updatecolor(){
+    clock.style.color = usercolor.value; 
+ }
+ usercolor.addEventListener("input" , updatecolor);
+ updatecolor()
+
+ function updatebgcolor(){
+    clock.style.backgroundColor = bgcolor.value;
+ }
+bgcolor.addEventListener("input" , updatebgcolor);
+updatebgcolor();
+
+
+
